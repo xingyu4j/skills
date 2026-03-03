@@ -1,6 +1,7 @@
 # Xingyu's Skills
 
-### 感谢 [Anthony Fu](https://github.com/antfu) 开源的[skills](https://github.com/antfu/skills)
+> [!NOTE]
+> 感谢 [Anthony Fu](https://github.com/antfu) 开源的[skills](https://github.com/antfu/skills)
 
 A curated collection of [Agent Skills](https://agentskills.io/home) reflecting [xingyu](https://github.com/xingyu4j)'s preferences, experience, and best practices, along with usage documentation for the tools.
 

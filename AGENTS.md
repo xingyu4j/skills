@@ -47,7 +47,7 @@ Third-party community skills, manually curated and maintained. These are hand-wr
 
 ## Repository Structure
 
-```
+```text
 .
 ├── meta.ts                     # Project metadata (repos & URLs)
 ├── instructions/               # Instructions for generating skills

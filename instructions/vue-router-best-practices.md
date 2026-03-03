@@ -1,0 +1,4 @@
+- Return values from navigation guards instead of using the deprecated `next()` callback.
+- Always `await` async operations in navigation guards.
+- Use `key` attribute or `watch` on route params to handle same-route navigation with different params.
+- Clean up event listeners and side effects when components unmount during route changes.

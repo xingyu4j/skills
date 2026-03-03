@@ -1,0 +1,3 @@
+- Fetch latest guidelines from the source URL before each review.
+- Check all UI code against Web Interface Guidelines for accessibility and UX compliance.
+- Output findings in `file:line` format.

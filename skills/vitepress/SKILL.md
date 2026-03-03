@@ -1,6 +1,6 @@
 ---
 name: vitepress
-description: VitePress static site generator powered by Vite and Vue. Use when building documentation sites, configuring themes, or writing Markdown with Vue components.
+description: 基于 Vite 和 Vue 的 VitePress 静态站点生成器。适用于构建文档站点、配置主题或编写包含 Vue 组件的 Markdown。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"

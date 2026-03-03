@@ -1,6 +1,9 @@
 {
+  "name": "@xingyu4j/skills",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.28.2",
+  "description": "xingyu's agent skills",
   "scripts": {
     "lint": "eslint .",
     "start": "node scripts/cli.ts",

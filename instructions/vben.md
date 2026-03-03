@@ -1,0 +1,5 @@
+- 使用 `#/` 前缀进行应用内部导入，使用 `@vben/` 前缀导入共享包。
+- 所有 Vue SFC 使用 `<script lang="ts" setup>`，仅使用 Composition API。
+- 所有用户可见文本使用 `$t('key')` 进行国际化。
+- 内部包使用 `"workspace:*"`，第三方包使用 `"catalog:"` 进行版本管理。
+- 新增表单组件类型时，在 `src/adapter/component/index.ts` 中注册组件映射。

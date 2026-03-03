@@ -1,0 +1,5 @@
+- Always create package tasks, not root tasks. Root `package.json` scripts should only delegate via `turbo run <task>`.
+- Always use `turbo run` (not shorthand `turbo <task>`) in package.json scripts and CI pipelines.
+- Use `dependsOn: ["^build"]` for dependency ordering. Use Transit Nodes pattern for parallel tasks with cache invalidation.
+- Declare `outputs` for file-producing tasks. Declare `env` for environment variables that affect cache.
+- Use Package Configurations (`turbo.json` in each package) instead of `package#task` overrides in root.

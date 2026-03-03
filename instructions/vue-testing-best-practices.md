@@ -1,0 +1,5 @@
+- Use Vitest as the recommended test runner for Vue 3 projects.
+- Test component behavior (black-box approach), not implementation details.
+- Always `await` async operations and use `flushPromises` to avoid race conditions.
+- Use `createTestingPinia()` for Pinia store setup in tests.
+- Prefer Playwright for end-to-end testing.

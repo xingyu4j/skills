@@ -7,9 +7,6 @@
 [submodule "sources/vite"]
 	path = sources/vite
 	url = https://github.com/vitejs/vite
-[submodule "sources/unocss"]
-	path = sources/unocss
-	url = https://github.com/unocss/unocss
 [submodule "vendor/slidev"]
 	path = vendor/slidev
 	url = https://github.com/slidevjs/slidev
@@ -40,3 +37,9 @@
 [submodule "vendor/vuejs-ai"]
 	path = vendor/vuejs-ai
 	url = https://github.com/vuejs-ai/skills
+[submodule "sources/vben"]
+	path = sources/vben
+	url = https://github.com/vbenjs/vue-vben-admin
+[submodule "sources/tailwindcss"]
+	path = sources/tailwindcss
+	url = https://github.com/tailwindlabs/tailwindcss.com

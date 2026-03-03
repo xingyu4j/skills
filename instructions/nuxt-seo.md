@@ -1,0 +1,5 @@
+- Always set `site.url` in `nuxt.config.ts` (required for sitemaps and canonical URLs).
+- Use `@nuxtjs/seo` bundle to install all 8 SEO modules at once.
+- Block staging environments from crawling with robots config.
+- Add Schema.org structured data (`useSchemaOrg`) and OG images (`defineOgImage`) to all important pages.
+- Use `useSeoMeta` for meta tags instead of manual meta tag management.

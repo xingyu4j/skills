@@ -1,6 +1,6 @@
 ---
 name: nuxt
-description: Nuxt full-stack Vue framework with SSR, auto-imports, and file-based routing. Use when working with Nuxt apps, server routes, useFetch, middleware, or hybrid rendering.
+description: Nuxt 全栈 Vue 框架，支持 SSR、自动导入和基于文件的路由。适用于 Nuxt 应用、服务端路由、useFetch、中间件或混合渲染的开发。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"

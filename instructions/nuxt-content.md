@@ -1,0 +1,5 @@
+- Always define collections in `content.config.ts` before querying. Restart dev server after config changes.
+- Use ISO 8601 date format (`2024-01-15`) in frontmatter.
+- Use `.only()` to select specific fields for performance.
+- Place MDC components in `components/content/` directory.
+- Install `better-sqlite3` for SQL storage. For Cloudflare, D1 binding must be exactly `DB` (case-sensitive).

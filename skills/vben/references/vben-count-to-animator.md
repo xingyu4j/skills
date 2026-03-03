@@ -1,0 +1,56 @@
+---
+name: vben-count-to-animator
+description: Vben CountToAnimator 数字动画组件，支持数字滚动动画效果。
+---
+
+# Vben CountToAnimator 数字动画
+
+数字动画组件，支持从起始值到结束值的滚动动画效果。
+
+## 基础用法
+
+通过 `start-val` 和 `end-val` 设置起始值和结束值：
+
+```vue
+<template>
+  <CountToAnimator :start-val="0" :end-val="2024" :duration="3000" />
+</template>
+```
+
+自定义前缀和分隔符：
+
+```vue
+<template>
+  <CountToAnimator :end-val="999999" prefix="$" separator="," />
+</template>
+```
+
+## Props
+
+| 属性名 | 描述 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| startVal | 起始值 | `number` | `0` |
+| endVal | 结束值 | `number` | `2021` |
+| duration | 动画持续时间（ms） | `number` | `1500` |
+| autoplay | 自动执行 | `boolean` | `true` |
+| prefix | 前缀 | `string` | - |
+| suffix | 后缀 | `string` | - |
+| separator | 分隔符 | `string` | `,` |
+| color | 字体颜色 | `string` | - |
+| useEasing | 是否开启缓动动画 | `boolean` | `true` |
+| transition | 动画效果 | `string` | `linear` |
+| decimals | 保留小数点位数 | `number` | `0` |
+
+## Events
+
+| 事件名 | 描述 | 类型 |
+| --- | --- | --- |
+| started | 动画已开始 | `()=>void` |
+| finished | 动画已结束 | `()=>void` |
+
+## Methods
+
+| 方法名 | 描述 | 类型 |
+| --- | --- | --- |
+| start | 开始执行动画 | `()=>void` |
+| reset | 重置 | `()=>void` |

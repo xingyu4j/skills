@@ -1,0 +1,4 @@
+- Use `---` to separate slides. First frontmatter block is headmatter (deck-wide config).
+- Use HTML comments `<!-- -->` for presenter notes.
+- Prefer built-in layouts (`cover`, `two-cols`, `image-right`, etc.) over custom layouts.
+- Use `v-click` and `v-clicks` for step-by-step animations.

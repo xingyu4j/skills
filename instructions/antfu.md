@@ -1,0 +1,5 @@
+- Each source file should have a clear, focused scope/purpose. Separate types into `types.ts`, constants into `constants.ts`.
+- Use `@antfu/eslint-config` for linting, run `pnpm run lint --fix` to format code.
+- Use `@antfu/ni` commands (`ni`, `nr`, `nu`, `nun`, `nlx`) instead of direct package manager commands.
+- Use named pnpm catalogs (`prod`, `dev`, `inlined`, `frontend`) for version management. Avoid the default catalog.
+- Test files should be colocated: `foo.ts` → `foo.test.ts`, use `describe`/`it` API.

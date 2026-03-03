@@ -1,0 +1,5 @@
+- Always use interface-based props with `defineProps<Props>()`, never object syntax.
+- Always include explicit imports even with Nuxt auto-imports.
+- Wrap Three.js/OGL components in `<ClientOnly>` for Nuxt SSR compatibility.
+- Clean up WebGL resources (cancelAnimationFrame, renderer.dispose) in `onUnmounted`.
+- Use `tw-animate-css` (not `tailwindcss-animate`) with TailwindCSS v4.

@@ -4,20 +4,20 @@ Generate [Agent Skills](https://agentskills.io/home) from project documentation.
 
 PLEASE STRICTLY FOLLOW THE BEST PRACTICES FOR SKILL: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
 
-- Focus on agents capabilities and practical usage patterns. 
+- Focus on agents capabilities and practical usage patterns.
 - Ignore user-facing guides, introductions, get-started, install guides, etc.
 - Ignore content that LLM agents already confident about in their training data.
 - Make the skill as concise as possible, avoid creating too many references.
 
 ## Skill Source Types
 
-There are two types of skill sources. The project lists are defined in `meta.ts`:
+There are four types of skill sources. The project lists are defined in `meta.ts`:
 
 ### Type 1: Generated Skills (`sources/`)
 
 For OSS projects **without existing skills**. We clone the repo as a submodule and generate skills from their documentation.
 
-- **Projects:** Vue, Nuxt, Vite, UnoCSS
+- **Projects:** Vue, Nuxt, Vite, Pinia, VitePress, Vitest, pnpm, Vben, Tailwind CSS
 - **Workflow:** Read docs → Understand → Generate skills
 - **Source:** `sources/{project}/docs/`
 
@@ -25,16 +25,25 @@ For OSS projects **without existing skills**. We clone the repo as a submodule a
 
 For projects that **already maintain their own skills**. We clone their repo as a submodule and sync specified skills to ours.
 
-- **Projects:** Slidev, VueUse
+- **Projects:** Slidev, VueUse, tsdown, Turborepo, vuejs-ai (vue-best-practices, vue-router-best-practices, vue-testing-best-practices), web-design-guidelines
 - **Workflow:** Pull updates → Copy specified skills (with optional renaming)
 - **Source:** `vendor/{project}/skills/{skill-name}/`
 - **Config:** Each vendor specifies which skills to sync and their output names in `meta.ts`
 
 ### Type 3: Hand-written Skills
 
-For skills that are written by Anthony Fu with his preferences, experience, tastes and best practices.
+For skills that are written by xingyu with preferences, experience, tastes and best practices.
 
-You don't need to do anything about them unless being asked.
+- **Skills:** antfu
+- You don't need to do anything about them unless being asked.
+
+### Type 4: Community Skills
+
+Third-party community skills, manually curated and maintained. These are hand-written based on external project documentation but are not auto-generated from submodules.
+
+- **Skills:** inspira-ui, nuxt-content, nuxt-seo
+- **Instructions:** `instructions/{project}.md`
+- **Workflow:** Read external docs → Write skills manually → Maintain by hand
 
 ## Repository Structure
 
@@ -43,7 +52,7 @@ You don't need to do anything about them unless being asked.
 ├── meta.ts                     # Project metadata (repos & URLs)
 ├── instructions/               # Instructions for generating skills
 │   └── {project}.md            # Instructions for generating skills for {project}
-│ 
+│
 ├── sources/                    # Type 1: OSS repos (generate from docs)
 │   └── {project}/
 │       └── docs/               # Read documentation from here
@@ -53,11 +62,11 @@ You don't need to do anything about them unless being asked.
 │       └── skills/
 │           └── {skill-name}/   # Individual skills to sync
 │
-└── skills/                     # Output directory (generated or synced)
+└── skills/                     # Output directory (generated, synced, or hand-written)
     └── {output-name}/
         ├── SKILL.md           # Index of all skills
-        ├── GENERATION.md       # Tracking metadata (for generated skills)
-        ├── SYNC.md             # Tracking metadata (for synced skills)
+        ├── GENERATION.md       # Tracking metadata (for generated skills, Type 1)
+        ├── SYNC.md             # Tracking metadata (for synced skills, Type 2)
         └── references/
             └── *.md            # Individual skill files
 ```
@@ -130,6 +139,18 @@ You don't need to do anything about them unless being asked.
 
 **Note:** Do NOT modify synced skills manually. Changes should be contributed upstream to the vendor project.
 
+### For Community Skills (Type 4)
+
+#### Adding a New Community Skill
+
+1. **Create** `instructions/{project}.md` with generation instructions
+2. **Create** skill files in `skills/{project}/references/`
+3. **Create** `SKILL.md` index listing all skills
+
+#### Updating Community Skills
+
+Community skills are maintained by hand. Check the upstream project documentation for changes and update accordingly.
+
 ## File Formats
 
 ### `SKILL.md`
@@ -145,9 +166,9 @@ Also record the version of the tool/project when the skills were generated.
 name: {name}
 description: {description}
 metadata:
-  author: Anthony Fu
+  author: xingyu
   version: "2026.1.1"
-  source: Generated from {source-url}, scripts located at https://github.com/antfu/skills
+  source: Generated from {source-url}, scripts located at https://github.com/xingyu4j/skills
 ---
 
 > The skill is based on {project} v{version}, generated at {date}.
@@ -239,7 +260,7 @@ Source references:
 
 ## Writing Guidelines
 
-When generating skills (Type 1 only):
+When generating skills (Type 1) or community skills (Type 4):
 
 1. **Rewrite for agents** - Don't copy docs verbatim; synthesize for LLM consumption
 2. **Be practical** - Focus on usage patterns and code examples

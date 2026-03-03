@@ -1,6 +1,6 @@
 ---
 name: vue
-description: Vue 3 Composition API, script setup macros, reactivity system, and built-in components. Use when writing Vue SFCs, defineProps/defineEmits/defineModel, watchers, or using Transition/Teleport/Suspense/KeepAlive.
+description: Vue 3 Composition API、script setup 宏、响应式系统和内置组件。适用于编写 Vue SFC、defineProps/defineEmits/defineModel、侦听器或使用 Transition/Teleport/Suspense/KeepAlive。
 metadata:
   author: Anthony Fu
   version: "2026.1.31"

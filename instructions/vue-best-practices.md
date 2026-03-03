@@ -1,0 +1,5 @@
+- Default stack: Vue 3 + Composition API + `<script setup lang="ts">`.
+- Keep state minimal with `ref`/`reactive`, derive everything possible with `computed`.
+- Props down, events up. Use `v-model` only for true two-way contracts.
+- Split components when they have more than one clear responsibility. Keep entry/root and route view components as thin composition surfaces.
+- Extract reusable, stateful, or side-effect-heavy logic into composables (`useXxx`).

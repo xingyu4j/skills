@@ -1,0 +1,3 @@
+- Prefer VueUse composables over custom code for browser APIs, sensors, state, and utilities.
+- Always consult the function's reference for usage details and type declarations before using.
+- Respect invocation rules: `AUTO` functions can be used freely, `EXTERNAL` requires the dependency to be installed, `EXPLICIT_ONLY` requires user request.

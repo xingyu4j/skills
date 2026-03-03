@@ -1,0 +1,4 @@
+- Use `@tailwindcss/vite` plugin, not PostCSS. Delete `tailwind.config.ts` for v4.
+- Follow the four-step CSS architecture: `@import "tailwindcss"` → `@import "tw-animate-css"` → `@custom-variant dark` → `:root`/`.dark` variables → `@theme inline` mapping.
+- Never put `:root`/`.dark` inside `@layer base`. Never use `.dark { @theme { } }`.
+- Use `@utility` instead of `@layer components` for custom classes with `@apply`.

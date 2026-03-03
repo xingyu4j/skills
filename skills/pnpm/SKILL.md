@@ -1,6 +1,6 @@
 ---
 name: pnpm
-description: Node.js package manager with strict dependency resolution. Use when running pnpm specific commands, configuring workspaces, or managing dependencies with catalogs, patches, or overrides.
+description: 具有严格依赖解析的 Node.js 包管理器。适用于运行 pnpm 专属命令、配置工作区或使用 catalog、patch、override 管理依赖。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"

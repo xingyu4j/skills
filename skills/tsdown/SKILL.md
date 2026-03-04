@@ -1,6 +1,6 @@
 ---
 name: tsdown
-description: Bundle TypeScript and JavaScript libraries with blazing-fast speed powered by Rolldown. Use when building libraries, generating type declarations, bundling for multiple formats, or migrating from tsup.
+description: 基于 Rolldown 的极速 TypeScript/JavaScript 库打包工具。适用于构建库、生成类型声明、多格式打包或从 tsup 迁移。
 ---
 
 # tsdown - The Elegant Library Bundler

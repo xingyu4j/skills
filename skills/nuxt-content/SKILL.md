@@ -1,6 +1,6 @@
 ---
 name: nuxt-content
-description: Nuxt Content v3 Git-based CMS for Markdown/MDC content sites. Use for blogs, docs, content-driven apps with type-safe queries, schema validation (Zod/Valibot), full-text search, navigation utilities. Supports Nuxt Studio production editing, Cloudflare D1/Pages deployment, Vercel deployment, SQL storage, MDC components, content collections.
+description: Nuxt Content v3 基于 Git 的 Markdown/MDC 内容站点 CMS。适用于博客、文档、内容驱动应用，支持类型安全查询、Schema 校验（Zod/Valibot）、全文搜索和导航工具。支持 Nuxt Studio 生产环境编辑、Cloudflare D1/Pages 部署、Vercel 部署、SQL 存储、MDC 组件和内容集合。
 
   Keywords: nuxt content, @nuxt/content, content collections, git-based cms, markdown cms, mdc syntax, nuxt studio, content editing, queryCollection, cloudflare d1 deployment, vercel deployment, markdown components, prose components, content navigation, full-text search, type-safe queries, sql storage, content schema validation, zod validation, valibot, remote repositories, content queries, queryCollectionNavigation, queryCollectionSearchSections, ContentRenderer component
 license: MIT

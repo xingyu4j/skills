@@ -1,6 +1,6 @@
 ---
 name: slidev
-description: Create and present web-based slides for developers using Markdown, Vue components, code highlighting, animations, and interactive features. Use when building technical presentations, conference talks, or teaching materials.
+description: 使用 Markdown、Vue 组件、代码高亮、动画和交互功能为开发者创建和演示基于 Web 的幻灯片。适用于构建技术演示、会议演讲或教学材料。
 ---
 
 # Slidev - Presentation Slides for Developers

@@ -3,7 +3,7 @@ name: vue-testing-best-practices
 version: 1.0.0
 license: MIT
 author: github.com/vuejs-ai
-description: Use for Vue.js testing. Covers Vitest, Vue Test Utils, component testing, mocking, testing patterns, and Playwright for E2E testing.
+description: 用于 Vue.js 测试。涵盖 Vitest、Vue Test Utils、组件测试、模拟(mock)、测试模式以及使用 Playwright 进行 E2E 测试。
 ---
 
 Vue.js testing best practices, patterns, and common gotchas.

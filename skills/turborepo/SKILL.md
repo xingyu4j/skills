@@ -1,13 +1,11 @@
 ---
 name: turborepo
 description: |
-  Turborepo monorepo build system guidance. Triggers on: turbo.json, task pipelines,
-  dependsOn, caching, remote cache, the "turbo" CLI, --filter, --affected, CI optimization, environment
-  variables, internal packages, monorepo structure/best practices, and boundaries.
+  Turborepo monorepo 构建系统指南。触发场景：turbo.json、任务流水线、
+  dependsOn、缓存、远程缓存、turbo CLI、--filter、--affected、CI 优化、环境变量、内部包、monorepo 结构/最佳实践和边界。
 
-  Use when user: configures tasks/workflows/pipelines, creates packages, sets up
-  monorepo, shares code between apps, runs changed/affected packages, debugs cache,
-  or has apps/packages directories.
+  适用于：配置任务/工作流/流水线、创建包、搭建 monorepo、跨应用共享代码、运行变更/受影响的包、调试缓存，
+  或项目包含 apps/packages 目录结构时使用。
 metadata:
   version: 2.8.13-canary.14
 ---

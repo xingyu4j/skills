@@ -1,11 +1,9 @@
 ---
 name: tailwind-theme-builder
 description: >
-  Set up Tailwind v4 with shadcn-vue themed UI. Workflow: install dependencies,
-  configure CSS variables with @theme inline, set up dark mode, verify.
-  Use when initialising React projects with Tailwind v4, setting up shadcn-vue theming,
-  or fixing colors not working, tw-animate-css errors, @theme inline dark mode conflicts,
-  @apply breaking, v3 migration issues.
+  搭建 Tailwind v4 + shadcn-vue 主题化 UI。工作流程：安装依赖、使用 @theme inline 配置 CSS 变量、设置暗色模式、验证。
+  适用于使用 Tailwind v4 初始化项目、配置 shadcn-vue 主题，
+  或修复颜色失效、tw-animate-css 错误、@theme inline 暗色模式冲突、@apply 失效、v3 迁移等问题。
 ---
 
 # Tailwind Theme Builder

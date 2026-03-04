@@ -1,6 +1,6 @@
 ---
 name: inspira-ui
-description: 120+ Vue/Nuxt animated components with TailwindCSS v4, motion-v, GSAP, Three.js. Use for hero sections, 3D effects, interactive backgrounds, or encountering setup, CSS variables, motion-v integration errors.
+description: 120+ Vue/Nuxt 动画组件，集成 TailwindCSS v4、motion-v、GSAP、Three.js。适用于 Hero 区域、3D 效果、交互式背景，或解决安装配置、CSS 变量、motion-v 集成等错误。
 license: MIT
 allowed-tools: ["bash", "read", "glob", "grep"]
 metadata:

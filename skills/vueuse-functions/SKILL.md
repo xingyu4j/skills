@@ -1,6 +1,6 @@
 ---
 name: vueuse-functions
-description: Apply VueUse composables where appropriate to build concise, maintainable Vue.js / Nuxt features.
+description: 在合适场景下应用 VueUse 组合式函数，构建简洁、可维护的 Vue.js / Nuxt 功能。
 license: MIT
 metadata:
     author: SerKo <https://github.com/serkodev>

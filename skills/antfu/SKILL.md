@@ -1,6 +1,6 @@
 ---
-name: xingyu
-description: xingyu 的主观工具链和 JavaScript/TypeScript 项目约定。适用于新项目搭建、ESLint/Prettier 替代方案配置、monorepo、库发布，或用户提到 xingyu 偏好时使用。
+name: antfu
+description: antfu 的主观工具链和 JavaScript/TypeScript 项目约定。适用于新项目搭建、ESLint/Prettier 替代方案配置、monorepo、库发布，或用户提到 antfu 偏好时使用。
 metadata:
   author: Anthony Fu
   version: "2026.02.03"

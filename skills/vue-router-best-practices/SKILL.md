@@ -1,6 +1,6 @@
 ---
 name: vue-router-best-practices
-description: "Vue Router 4 patterns, navigation guards, route params, and route-component lifecycle interactions."
+description: "Vue Router 4 路由模式、导航守卫、路由参数以及路由与组件生命周期的交互。"
 version: 1.0.0
 license: MIT
 author: github.com/vuejs-ai

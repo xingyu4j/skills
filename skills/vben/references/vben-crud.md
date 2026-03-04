@@ -302,6 +302,7 @@ If the user wants mock data, create Nitro routes in `apps/backend-mock/api/<modu
 
 For different UI libraries, replace the ant-design-vue specific imports:
 - `web-antd`: `ant-design-vue` (Button, message, Popconfirm, Space, etc.)
+- `web-antdv-next`: `antdv-next` (Button, message, Popconfirm, Space, etc.)
 - `web-ele`: `element-plus` (ElButton, ElMessage, ElPopconfirm, etc.)
 - `web-naive`: `naive-ui` (NButton, useMessage, NPopconfirm, etc.)
 - `web-tdesign`: `tdesign-vue-next` (TButton, MessagePlugin, TPopconfirm, etc.)
